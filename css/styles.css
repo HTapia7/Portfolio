@@ -1,3 +1,4 @@
+/* some default styling, applies to everything*/
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,11 +6,13 @@
     color: black;
 }
 
+/* global variables  */
 :root{
     --white: #edf0ed;
     --grey: #24252a;
 }
 
+/* using the grid */
 .container{
     display: grid;
     height: 100vh;
@@ -19,7 +22,7 @@
                          'aside main'
                          'portfolio portfolio'
                          'content1 content2'
-                         'contact contact'
+                         'aboutMe contact'
                          'footer footer ';
     text-align: center;
     color: var(--white);
@@ -33,6 +36,7 @@ li , a , button {
     text-decoration: none;
 }
 
+/* assign flex to make responsive */
 header{
     display: flex;
     justify-content: space-between;
@@ -64,6 +68,7 @@ header{
     color: #0088a9;
 }
 
+/* styling on button */
 button{
     padding: 9px 25px;
     border: none;
@@ -108,9 +113,11 @@ aside h3{
     padding: 10px;
     margin: 5px; 
 }
+#about-me{
+    grid-area: aboutMe;
+}
 
 #portfolio:hover{
-    transform: scale(1.02);
     cursor: pointer;
 }
 
@@ -121,7 +128,6 @@ aside h3{
 }
 
 #content-1:hover{
-    transform: scale(1.02);
     cursor: pointer;
 }
 
@@ -131,10 +137,6 @@ aside h3{
     padding: 10px;
     margin: 5px; 
     cursor: pointer;
-}
-
-#content-2:hover{
-    transform: scale(1.02);
 }
 
 footer{
@@ -189,7 +191,14 @@ span{
     font-weight: bold;
 }
 
+h4{
+    font-size: 40px;
+}
 
+p{
+    font-size: 20px;
+}
+/* making responsive on mobile */
 @media screen and (max-width: 480px){
     .container{
         grid-template-columns: 1fr;
@@ -197,8 +206,10 @@ span{
         grid-template-areas:    'header'
                                 'main'
                                 'aside'
+                                'portfolio'
                                 'content1'
                                 'content2'
+                                'aboutMe'
                                 'contact'
                                 'footer' ;
 

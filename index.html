@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Portfolio</title>
+    <title>Hernan's Portfolio</title>
 </head>
 <body>
     <div class="container">
@@ -14,7 +14,8 @@
             <nav>
                 <ul class="nav-links">
                     <li><a href='#'>Home</a></li>
-                    <li><a href='#content-1'>Portfolio</a></li>
+                    <li><a href='#about-me'>About Me </a></li>
+                    <li><a href='#portfolio'>Portfolio</a></li>
                     <li><a href='#contact-me'>Contact Me</a></li>
                 </ul>
             </nav>
@@ -24,67 +25,54 @@
         <main>
             <img src="./images/profile 1.png">
         </main>
-
+        
         <aside>
             <h2>Hey There,</h2>
             <h2>I'm Hernan Tapia</h2>
-            <h3>I am a <span>Web Developer</span></h3>
+            <h2>I am a <span>Web Developer</span></h2><br>
         </aside>
 
         <div id="portfolio">
-
-            <a href="https://github.com/HTapia7/movie-selector" target="_blank">
-
+            <a href="https://htapia7.github.io/movie-selector/" target="_blank">
             <img src="./images/movie app.png" alt="movie application">    
-
         </div>
 
         <div id='content-1'>
-
-            <a href="https://htapia7.github.io/jspractice/" target="_blank">
-        
+            <a href="https://htapia7.github.io/password-Generator/" target="_blank">  
             <img src="./images/coming soon.jpeg" alt="Coming soon">
-
             </a>
-
         </div>
 
-        <div id='content-2'>
-            
-            <a href="https://htapia7.github.io/first_module/" target="_blank">
-
+        <div id='content-2'>         
+            <a href="https://htapia7.github.io/day-Scheduler/" target="_blank">
             <img src="./images/coming soon.jpeg" alt="project 2">
-
             </a>
+        </div>
 
+        <div id="about-me">
+            <h2>About Me</h2>
+            <p>I am located in central California and have been here my whole life. My passion is creating websites using popular languages such as HTML, CSS , JavaScript. Other passions of mine are gaming, going outdoors and drinking coffee. </p>
         </div>
 
         <div id='contact-me'>
-
             <h2>Contact me:  </h2>
-        
             <br>
 
             <form>
+                <label for='fname' size='50'>First name: </label>
+                <input type='text' id='fname' name='fname'><br><br>
 
-            <label for='fname' size='50'>First name: </label>
-            <input type='text' id='fname' name='fname'><br><br>
+                <label for='lname' size='50'>Last name: </label>
+                <input type='text' id="lname" name="lname"><br><br>
 
-            <label for='lname' size='50'>Last name: </label>
-            <input type='text' id="lname" name="lname"><br><br>
+                <label for='email' size='100'>Email: </label>
+                <input type='email' id='email' name='email'><br><br>
 
-            <label for='email' size='100'>Email: </label>
-            <input type='email' id='email' name='email'><br><br>
+                <textarea name='text' rows='3' cols="35" placeholder='Write message..'></textarea><br><br>
 
-            <textarea name='text' rows='3' cols="35" placeholder='Write message..'></textarea><br><br>
-
-            <button>Submit</button>
-    
-
+                <button>Submit</button>
             </form> <br><br>
-
         </div>
-
         <footer>
           <p>© Hernan Tapia</p>
         </footer>
