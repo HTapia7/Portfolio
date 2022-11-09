@@ -1,3 +1,8 @@
+<img width="1512" alt="Screen Shot 2022-11-08 at 5 57 57 PM" src="https://user-images.githubusercontent.com/112591915/200718048-051f3782-1088-49d5-88c9-4b04915ec4d7.png">
+
+
+https://htapia7.github.io/Portfolio/
+
 # Professional Portfolio
 
 * WHEN I load their portfolio THEN I am presented with the developer's name, a recent photo or     avatar, and links to sections about them, their work, and how to contact them
